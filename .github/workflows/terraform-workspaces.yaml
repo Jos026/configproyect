@@ -1,5 +1,5 @@
 #YAML 
-name: Terraform Workspaces
+name: Config management workflow
 
 on:
   pull_request:
@@ -33,7 +33,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
-      - name: Terraform Workflow
+      - name: Config management workflow
         working-directory: aws_bucket
         run: |
           terraform init
